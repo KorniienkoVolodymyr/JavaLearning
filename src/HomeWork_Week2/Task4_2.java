@@ -1,6 +1,4 @@
 package HomeWork_Week2;
-
-import java.util.Collections;
 import java.util.Scanner;
 
 /**
@@ -14,13 +12,6 @@ public class Task4_2 {
         System.out.println("Please enter number: ");
         int number = scanner.nextInt();
         int[] array = Utilities.converterToMas(number);
-
-        int maxValue = array[0];
-        for (int i = 1; i < array.length ; i++) {
-            if (array[i] > maxValue) {
-                maxValue = array[i];
-            }
-        }
-        System.out.println(maxValue);
+        Utilities.maxValueInArray(array);
     }
 }
