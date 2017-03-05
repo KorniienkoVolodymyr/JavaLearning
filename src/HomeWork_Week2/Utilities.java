@@ -27,4 +27,13 @@ public class Utilities {
         }
         System.out.println(maxValue);
     }
+
+    public static int[] generateArray(int size, int startPoint, int endPoint) {
+        int[] arr = new int[size];
+
+        for (int i = 0; i < size; i++) {
+            arr[i] = (int) (Math.random() * (endPoint - startPoint) + startPoint);
+        }
+        return arr;
+    }
 }
