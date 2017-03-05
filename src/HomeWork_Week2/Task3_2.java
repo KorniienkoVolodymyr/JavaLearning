@@ -12,12 +12,9 @@ public class Task3_2 {
 
         System.out.println("Please enter number: ");
         int number = scanner.nextInt();
-        int len = Integer.toString(number).length();
-        int[] array = new int[len];
+        int[] array = Utilities.converterToMas(number);
 
-        for (int i = 0; i < len; i++) {
-            array[i] = number % 10;
-            number /= 10;
+        for (int i = 0; i < array[i]; i++) {
             if (array[i] % 2 == 0) {
                 System.out.print(array[i] + " ");
             }
