@@ -19,6 +19,7 @@ public class Task5_2 {
         int end = scanner.nextInt();
 
         int[] mas = Utilities.generateArray(size, start, end);
-        Utilities.maxValueInArray(mas);
+        int maxValue = Utilities.maxValueInArray(mas);
+        System.out.println("The biggest element of array = " + maxValue);
     }
 }

@@ -11,7 +11,8 @@ public class Task4_2 {
 
         System.out.println("Please enter number: ");
         int number = scanner.nextInt();
-        int[] array = Utilities.converterToMas(number);
-        Utilities.maxValueInArray(array);
+        int[] array = Utilities.converterNumberToMas(number);
+        int maxValue = Utilities.maxValueInArray(array);
+        System.out.println("The biggest number =  " + maxValue);
     }
 }

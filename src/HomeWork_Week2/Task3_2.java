@@ -12,7 +12,7 @@ public class Task3_2 {
 
         System.out.println("Please enter number: ");
         int number = scanner.nextInt();
-        int[] array = Utilities.converterToMas(number);
+        int[] array = Utilities.converterNumberToMas(number);
 
         for (int i = 0; i < array[i]; i++) {
             if (array[i] % 2 == 0) {

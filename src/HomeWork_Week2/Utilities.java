@@ -7,7 +7,7 @@ import java.util.Scanner;
  */
 public class Utilities {
 
-    public static int[] converterToMas (int number) {
+    public static int[] converterNumberToMas(int number) {
         int len = Integer.toString(number).length();
         int[] array = new int[len];
 
@@ -18,19 +18,28 @@ public class Utilities {
         return array;
     }
 
-    public static void maxValueInArray(int[] array) {
+    public static int maxValueInArray(int[] array) {
         int maxValue = array[0];
         for (int i = 1; i < array.length ; i++) {
             if (array[i] > maxValue) {
                 maxValue = array[i];
             }
         }
-        System.out.println(maxValue);
+        return maxValue;
+    }
+
+    public static int minValueArray(int[] array) {
+        int minValue = array[0];
+        for (int i = 0; i < array.length; i++) {
+            if (array[i] < minValue) {
+                minValue = array[i];
+            }
+        }
+        return minValue;
     }
 
     public static int[] generateArray(int size, int startPoint, int endPoint) {
         int[] arr = new int[size];
-
         for (int i = 0; i < size; i++) {
             arr[i] = (int) (Math.random() * (endPoint - startPoint) + startPoint);
         }
