@@ -18,7 +18,7 @@ public class Task7_2 {
         int end = scanner.nextInt();
 
         int[] mas = Utilities.generateArray(size, start, end);
-        int sumArray = Utilities.arraySum(mas);
+        int sumArray = Utilities.arraySumOddNumbers(mas);
         System.out.println(sumArray);
     }
 }

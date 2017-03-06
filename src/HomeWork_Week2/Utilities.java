@@ -46,11 +46,13 @@ public class Utilities {
         return arr;
     }
 
-    public static int arraySum(int[] array) {
+    public static int arraySumOddNumbers(int[] array) {
         int sumArray = 0;
         for (int i = 0; i < array.length; i++) {
-            array[i] += sumArray;
-            sumArray = array[i];
+            if (array[i] % 2 != 0) {
+                array[i] += sumArray;
+                sumArray = array[i];
+            }
         }
         return sumArray;
     }
