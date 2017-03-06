@@ -45,4 +45,13 @@ public class Utilities {
         }
         return arr;
     }
+
+    public static int arraySum(int[] array) {
+        int sumArray = 0;
+        for (int i = 0; i < array.length; i++) {
+            array[i] += sumArray;
+            sumArray = array[i];
+        }
+        return sumArray;
+    }
 }
