@@ -17,6 +17,7 @@ public class Task8_2 {
             System.out.println("5. Friday");
             System.out.println("6. Saturday");
             System.out.println("7. Sunday");
+            System.out.println("8. Exit");
 
             String choose = scanner.nextLine();
 
@@ -42,6 +43,8 @@ public class Task8_2 {
                 case "7":
                     Sunday();
                     break;
+                case "8":
+                    return;
                 default:
                     System.out.println("Wrong chose!!!");
             }
