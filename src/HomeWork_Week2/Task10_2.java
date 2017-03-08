@@ -13,7 +13,7 @@ public class Task10_2 {
         System.out.print("Enter some text: ");
         String text = scanner.nextLine();
 
-        String[] words = text.split(" ");
+        String[] words = Utilities.textToWords(text);
         char[] charArray = words[2].toCharArray();
         System.out.println("First letter in third word is " + charArray[0]);
     }
