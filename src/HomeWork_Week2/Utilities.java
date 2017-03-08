@@ -47,14 +47,14 @@ public class Utilities {
     }
 
     public static int arraySumOddNumbers(int[] array) {
-        int sumArray = 0;
+        int sumOddNumbersArray = 0;
         for (int i = 0; i < array.length; i++) {
             if (array[i] % 2 != 0) {
-                array[i] += sumArray;
-                sumArray = array[i];
+                array[i] += sumOddNumbersArray;
+                sumOddNumbersArray = array[i];
             }
         }
-        return sumArray;
+        return sumOddNumbersArray;
     }
 
     public static String[] textToWords(String text) {
@@ -71,6 +71,15 @@ public class Utilities {
             System.out.println(words[i] + " " + words[i + 1]);
             break;
         }
+    }
+
+    public static int arraySum (int[] array) {
+        int arraySum = 0;
+        for (int i = 0; i < array.length; i++) {
+            array[i] += arraySum;
+            arraySum = array[i];
+        }
+        return arraySum;
     }
 
 }
