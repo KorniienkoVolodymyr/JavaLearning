@@ -20,7 +20,7 @@ public class Utilities {
 
     public static int maxValueInArray(int[] array) {
         int maxValue = array[0];
-        for (int i = 1; i < array.length ; i++) {
+        for (int i = 1; i < array.length; i++) {
             if (array[i] > maxValue) {
                 maxValue = array[i];
             }
@@ -56,4 +56,21 @@ public class Utilities {
         }
         return sumArray;
     }
+
+    public static String[] textToWords(String text) {
+        String[] words = text.split(" ");
+        return words;
+    }
+
+    public static void changeWordsPosition(String[] words) {
+        for (int i = 0; i <= words.length - 1; i++) {
+            String firstWord = words[i];
+            String secondWord = words[i + 1];
+            words[i] = secondWord;
+            words[i + 1] = firstWord;
+            System.out.println(words[i] + " " + words[i + 1]);
+            break;
+        }
+    }
+
 }
