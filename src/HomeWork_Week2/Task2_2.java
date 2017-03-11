@@ -13,10 +13,11 @@ public class Task2_2 {
         System.out.println("Please enter number: ");
         int number = scanner.nextInt();
         int array[] = Utilities.converterNumberToMas(number);
+        int counter = 1;
 
-        for (int i = 0; i < array.length - 1; i++) {
-            array[i + 1] *= array[i];
+        for (int i = 0; i < array.length; i++) {
+            counter *= array[i];
         }
-        System.out.println(array);
+        System.out.println(counter);
     }
 }
