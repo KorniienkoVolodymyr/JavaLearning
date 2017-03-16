@@ -15,4 +15,15 @@ public class Utilities {
         }
         return result;
     }
+
+    public static int[] converterNumberToMas(int number) {
+        int len = Integer.toString(number).length();
+        int[] array = new int[len];
+
+        for (int i = 0; i < len; i++) {
+            array[i] = number % 10;
+            number /= 10;
+        }
+        return array;
+    }
 }
