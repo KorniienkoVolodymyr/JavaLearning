@@ -1,4 +1,4 @@
-package HomeWork_Week3.Task10;
+package HomeWork_Week3.Task3_10;
 
 /**
  * Created by volodymyrkorniienko on 16.03.17.
@@ -18,7 +18,8 @@ public class Password_Utils {
         for (int i = 0; i < array.length; i++) {
             if (Character.isLowerCase(array[i])) {
                 System.out.println("Lower case OK");
-                break;
+            } else {
+                System.out.println("Invalid password - Must have lower case letter");
             }
         }
     }
@@ -27,7 +28,8 @@ public class Password_Utils {
         for (int i = 0; i < array.length; i++) {
             if (Character.isUpperCase(array[i])) {
                 System.out.println("Upper case OK");
-                break;
+            } else {
+                System.out.println("Invalid password - Must have upper case letter");
             }
         }
     }
@@ -36,7 +38,8 @@ public class Password_Utils {
         for (int i = 0; i < array.length; i++) {
             if(array[i] >= 0 && array[i] <=9) {
                 System.out.println("Digit OK");
-                break;
+            } else {
+                System.out.println("Invalid password - Must have from digits");
             }
         }
     }
@@ -47,7 +50,7 @@ public class Password_Utils {
         String checkGfhjkm = "gfhjkm";
 
         if (password.equals(checkPassword) || password.equals(checkPass) || password.equals(checkGfhjkm)) {
-            System.out.println("Invalid password - Must have from 8 to 20 symbols");
+            System.out.println("Invalid password very easy");
             System.exit(0);
         } else {
             System.out.println("Password level OK");
