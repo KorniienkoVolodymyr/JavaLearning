@@ -35,11 +35,5 @@ public class Task3_6 {
 
         System.out.println("Zero max length = " + numbers.indexOf(zeroMaxLength) + "," + (numbers.indexOf(zeroMaxLength) + zeroMaxLength.length() - 1));
         System.out.println("First max length = " + numbers.indexOf(firstMaxLength) + "," + (numbers.indexOf(firstMaxLength) + firstMaxLength.length() - 1));
-
-//        for (int i = 0; i < numbers.length; i++) {
-//            if (numbers[i] == 0) {
-//                continue;
-//            }
-//        }
     }
 }
