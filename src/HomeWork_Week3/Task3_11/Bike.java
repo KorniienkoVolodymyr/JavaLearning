@@ -10,7 +10,6 @@ public class Bike {
     public String number;
     public String statusOrder;
     public int cost;
-    public String owner;
 
     public static Bike init(String model, String type, String number, String statusOrder, int cost) {
         Bike newBike = new Bike();
