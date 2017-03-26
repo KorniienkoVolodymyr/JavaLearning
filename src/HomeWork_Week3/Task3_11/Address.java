@@ -9,8 +9,7 @@ public class Address {
     public String street;
     public int houseNumber;
 
-    public static Address init(String cityName, String streetName,
-                               int houseNumber) {
+    public static Address init(String cityName, String streetName, int houseNumber) {
         Address address = new Address();
         address.city = cityName;
         address.street = streetName;
