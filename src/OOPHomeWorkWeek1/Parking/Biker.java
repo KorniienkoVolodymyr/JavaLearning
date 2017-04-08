@@ -1,4 +1,4 @@
-package HomeWork_Week3.Task3_11;
+package OOPHomeWorkWeek1.Parking;
 
 import java.util.Scanner;
 

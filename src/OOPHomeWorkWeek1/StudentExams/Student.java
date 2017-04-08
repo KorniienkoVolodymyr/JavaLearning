@@ -1,6 +1,4 @@
-package HomeWork_Week3.Task3_12;
-
-import com.sun.tools.javac.util.Convert;
+package OOPHomeWorkWeek1.StudentExams;
 
 /**
  * Created by volodymyrkorniienko on 26.03.17.

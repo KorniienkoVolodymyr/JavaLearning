@@ -1,7 +1,4 @@
-package HomeWork_Week3.Task3_11;
-
-import java.util.Date;
-import java.util.Scanner;
+package OOPHomeWorkWeek1.Parking;
 
 /**
  * Created by volodymyrkorniienko on 18.03.17.
