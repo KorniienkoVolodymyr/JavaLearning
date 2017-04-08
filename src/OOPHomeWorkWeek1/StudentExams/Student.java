@@ -16,22 +16,22 @@ public class Student {
         return student;
     }
 
-    public void addSubject(Subject subject) {
+    public boolean addSubject(Subject subject) {
+        if (subjects == null) return false;
         for (int i = 0; i < subjects.length; i++) {
-            if (subjects[i] == null) {
                 subjects[i] = subject;
-                break;
             }
+            return true;
         }
-    }
 
-    public void removeLastSubject() {
+    public boolean removeLastSubject() {
         for (int i = subjects.length - 1; i >= 0; i--) {
             if (subjects[i] != null) {
                 subjects[i] = null;
                 break;
             }
         }
+        return true;
     }
 
     public void showInformationAboutSubjects() {
@@ -47,21 +47,5 @@ public class Student {
             avg += subjects[i].studentMark;
         }
         System.out.println(avg / subjects.length);
-    }
-
-    public void showInformationAboutSubject(String subjectName) {
-        for (int i = 0; i < subjects.length; i++) {
-            if (subjects[i].name.equals(subjectName)) {
-                System.out.println(subjects[i].name + " " + subjects[i].hoursSemester);
-            }
-        }
-    }
-
-    public void studentMark(String studentName, String subjectName) {
-        for (int i = 0; i < subjects.length; i++) {
-            if (subjects[i].name.equals(subjectName) && this.name.equals(studentName)) {
-                System.out.println(subjects[i].studentMark);
-            }
-        }
     }
 }

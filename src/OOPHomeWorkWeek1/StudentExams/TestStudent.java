@@ -21,7 +21,5 @@ public class TestStudent {
         //student.removeLastSubject();
         //student.showInformationAboutSubjects();
         //student.avgMarks();
-        //student.showInformationAboutSubject("Math5");
-        //student.studentMark("Vova", "Math5");
     }
 }
