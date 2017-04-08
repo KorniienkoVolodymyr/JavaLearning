@@ -1,20 +1,17 @@
 package OOPHomeWorkWeek1.StudentExams;
 
 /**
- * Created by volodymyrkorniienko on 18.03.17.
+ * Created by volodymyrkorniienko on 08.04.17.
  */
 public class Address {
 
-    public String city;
-    public String street;
-    public int houseNumber;
+    private String city;
+    private String street;
+    private int house;
 
-    public static Address init(String cityName, String streetName, int houseNumber) {
-        Address address = new Address();
-        address.city = cityName;
-        address.street = streetName;
-        address.houseNumber = houseNumber;
-
-        return address;
+    public Address(String city, String street, int house) {
+        this.city = city;
+        this.street = street;
+        this.house = house;
     }
 }
